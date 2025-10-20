@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio em Ciência de Dados</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Merriweather:wght@400;700&display=swap');
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #fafafa;
+      color: #333;
+    }
+
+    h1, h2 {
+      font-family: 'Merriweather', serif;
+    }
+  </style>
+</head>
+
+<body class="antialiased">
+
+  <!-- Container principal -->
+  <div class="max-w-6xl mx-auto p-6 md:p-10">
+
+    <!-- Cabeçalho -->
+    <section class="flex flex-col md:flex-row md:items-center md:justify-between bg-white rounded-2xl shadow-md p-8 border-t-4 border-blue-400">
+      <div class="md:w-2/3 space-y-4">
+        <h1 class="text-4xl font-bold text-gray-800 leading-tight">
+          Bem-vindo ao meu portfólio de projetos em <span class="text-blue-600">Ciência de Dados</span>.
+        </h1>
+
+        <p class="text-gray-600 text-lg">
+          Nesta página, demonstro minhas habilidades em resolver problemas de negócio utilizando conceitos e ferramentas da Ciência de Dados,
+          através de projetos com dados públicos e aplicados.
+        </p>
+
+        <div>
+          <h2 class="font-bold text-gray-700 text-lg mb-1">Sobre mim</h2>
+          <p class="text-gray-600">
+            Sou apaixonado por estatística e inteligência artificial aplicada à resolução de problemas reais.
+            Busco continuamente aprimorar minhas competências em modelagem preditiva, automação e visualização de dados.
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-6 md:mt-0 md:w-1/3 flex justify-center">
+        <img src="Foto Perfil.png" alt="Foto de Perfil"
+             class="w-72 h-72 object-cover rounded-2xl shadow-xl border-4 border-blue-200">
+      </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section class="mt-12">
+      <h2 class="text-2xl font-bold text-gray-800 border-b-2 border-blue-300 pb-2 mb-8">
+        Habilidades
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-blue-400">
+          <h3 class="font-semibold text-blue-600 text-lg mb-2">Linguagens e Banco de Dados</h3>
+          <ul class="list-disc list-inside text-gray-600">
+            <li>Python (Pandas, NumPy, Scikit-learn)</li>
+            <li>R e SQL</li>
+            <li>SQLite, PostgreSQL</li>
+          </ul>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-blue-400">
+          <h3 class="font-semibold text-blue-600 text-lg mb-2">Estatística</h3>
+          <ul class="list-disc list-inside text-gray-600">
+            <li>Testes de hipótese, ANOVA</li>
+            <li>Regressão linear e logística</li>
+            <li>Correlação e probabilidade</li>
+          </ul>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-blue-400">
+          <h3 class="font-semibold text-blue-600 text-lg mb-2">Machine Learning</h3>
+          <ul class="list-disc list-inside text-gray-600">
+            <li>Regressão, Classificação, Clustering</li>
+            <li>Árvores de decisão, Random Forest, XGBoost</li>
+            <li>Pipeline e tuning de hiperparâmetros</li>
+          </ul>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-blue-400">
+          <h3 class="font-semibold text-blue-600 text-lg mb-2">Visualização de Dados</h3>
+          <ul class="list-disc list-inside text-gray-600">
+            <li>Power BI, Tableau</li>
+            <li>Matplotlib, Seaborn, Plotly</li>
+          </ul>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-blue-400">
+          <h3 class="font-semibold text-blue-600 text-lg mb-2">Engenharia de Software</h3>
+          <ul class="list-disc list-inside text-gray-600">
+            <li>APIs com Flask e FastAPI</li>
+            <li>Versionamento com Git/GitHub</li>
+            <li>Deploy com Streamlit e Render</li>
+          </ul>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-blue-400">
+          <h3 class="font-semibold text-blue-600 text-lg mb-2">Outras Ferramentas</h3>
+          <ul class="list-disc list-inside text-gray-600">
+            <li>Excel avançado, Power Query</li>
+            <li>Inglês técnico</li>
+            <li>Storytelling com dados</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Projetos -->
+    <section class="mt-16">
+      <h2 class="text-3xl font-bold text-gray-800 border-b-2 border-blue-400 pb-2 mb-10">
+        Projetos em Ciência de Dados
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- Projeto 1 -->
+        <div class="bg-white rounded-xl shadow-md overflow-hidden border border-blue-100">
+          <img src="projeto.jpg" alt="Rossmann Project" class="h-48 w-full object-cover">
+          <div class="p-6">
+            <h3 class="text-lg font-bold text-gray-800">Rossmann - Predição de Vendas (Regressão)</h3>
+            <p class="text-gray-600 text-sm mt-2">
+              Modelo de machine learning para prever o volume de vendas diárias de uma rede de farmácias.
+            </p>
+            <p class="text-gray-500 text-sm mt-3 font-semibold">Ferramentas:</p>
+            <ul class="list-disc list-inside text-gray-600 text-sm">
+              <li>Python, Pandas, Scikit-learn</li>
+              <li>Flask, Heroku, GitHub</li>
+            </ul>
+            <a href="https://github.com/ProfLeandroRomualdo/Statistics-for-data-science.git"
+               target="_blank"
+               class="inline-block mt-4 px-4 py-2 text-sm border border-blue-600 text-blue-600 rounded hover:bg-purple-600 hover:text-white transition">
+               🔗 Ver no GitHub
+            </a>
+          </div>
+        </div>
+
+        <!-- Projeto 2 -->
+        <div class="bg-white rounded-xl shadow-md overflow-hidden border border-blue-100">
+          <img src="projeto.jpg" alt="CardioCatch Project" class="h-48 w-full object-cover">
+          <div class="p-6">
+            <h3 class="text-lg font-bold text-gray-800">CardioCatch - Diagnóstico de Doenças Cardíacas</h3>
+            <p class="text-gray-600 text-sm mt-2">
+              Modelo de classificação para previsão de doenças cardíacas com base em dados clínicos públicos.
+            </p>
+            <p class="text-gray-500 text-sm mt-3 font-semibold">Ferramentas:</p>
+            <ul class="list-disc list-inside text-gray-600 text-sm">
+              <li>Python, Sklearn, Matplotlib</li>
+              <li>Streamlit, GitHub</li>
+            </ul>
+            <a href="https://github.com/ProfLeandroRomualdo/Statistics-for-data-science.git"
+               target="_blank"
+               class="inline-block mt-4 px-4 py-2 text-sm border border-blue-600 text-blue-600 rounded hover:bg-purple-600 hover:text-white transition">
+               🔗 Ver no GitHub
+            </a>
+          </div>
+        </div>
+
+        <!-- Projeto 3 -->
+        <div class="bg-white rounded-xl shadow-md overflow-hidden border border-blue-100">
+          <img src="projeto.jpg" alt="FomeZero Project" class="h-48 w-full object-cover">
+          <div class="p-6">
+            <h3 class="text-lg font-bold text-gray-800">FomeZero Marketplace - Painel de Negócio</h3>
+            <p class="text-gray-600 text-sm mt-2">
+              Painel interativo para análise de marketplace, com visualizações e indicadores de desempenho.
+            </p>
+            <p class="text-gray-500 text-sm mt-3 font-semibold">Ferramentas:</p>
+            <ul class="list-disc list-inside text-gray-600 text-sm">
+              <li>Python, Streamlit, Power BI</li>
+              <li>GitHub, Streamlit Cloud</li>
+            </ul>
+            <a href="https://github.com/ProfLeandroRomualdo/Statistics-for-data-science.git"
+               target="_blank"
+               class="inline-block mt-4 px-4 py-2 text-sm border border-blue-600 text-blue-600 rounded hover:bg-purple-600 hover:text-white transition">
+               🔗 Ver no GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="text-center mt-16 text-gray-500 text-sm">
+      © 2025 - Desenvolvido por <span class="text-blue-600 font-medium">Leandro Romualdo</span> | Hospedado no GitHub Pages
+    </footer>
+  </div>
+
+</body>
+</html>
